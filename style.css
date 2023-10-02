@@ -40,8 +40,8 @@ body[light-mode="dark"] {
     animation: rotation 1s linear infinite; }
 .section1 {
     display: flex;
-    width: 100vw;
-    height: 50vh;
+    width: 100dvw;
+    height: 50dvh;
     margin: auto;
     align-items: end;
     justify-content: center;
@@ -52,8 +52,8 @@ body[light-mode="dark"] {
 }
 .section2 {
     display: flex;
-    width: 100vw;
-    height: 50vh;
+    width: 100dvw;
+    height: 50dvh;
     margin: auto;
     align-items: start;
     justify-content: center;
