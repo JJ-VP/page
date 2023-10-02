@@ -23,6 +23,9 @@
     function toggle_light_mode() {
         var app = document.getElementsByTagName("BODY")[0];
         var button = document.getElementById("theme-toggle");
+        if (typeof localStorage.lightMode === 'undefined') {
+          localStorage.lightMode = "dark";
+        };
         if (localStorage.lightMode == "dark") {
           localStorage.lightMode = "light";
           app.setAttribute("light-mode", "light");

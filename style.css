@@ -19,7 +19,7 @@ body[light-mode="dark"] {
     100% {
       transform: rotate(360deg); } }
 #loader-wrapper {
-    background-color: #FFFFFF;
+    background-color: #1A1F33;
     position: fixed;
     top: 0;
     left: 0;
