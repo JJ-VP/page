@@ -4,11 +4,11 @@
     right: 0;
 }
 
-body {
+body[light-mode="light"] {
     background-color: #f6f6f6;
     color: #1DA0FF;
 }
-body[light-mode="dark"] {
+body {
     background-color: #1A1F33;
     color: #1DA0FF;
 }

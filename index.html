@@ -88,12 +88,6 @@
       </g>
     </svg>
   </button>
-  <script>
-    if (localStorage.lightMode == "light") {
-        var button = document.getElementById("theme-toggle");
-        button.classList.remove("theme-toggle--toggled");
-    }
-  </script>
   <section class="section1">
     <h1>JJ-Dev</h1>
   </section>
@@ -108,6 +102,10 @@
     $(window).on('load', function() {
       $("#loader-wrapper").fadeOut(700);
     });
+    if (localStorage.lightMode == "light") {
+        var button = document.getElementById("theme-toggle");
+        button.classList.remove("theme-toggle--toggled");
+    }
   </script>
 </body>
 </html>
