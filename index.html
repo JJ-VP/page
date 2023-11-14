@@ -18,76 +18,11 @@
   <meta name="twitter:description" content="" />
   <meta name="twitter:image" content="" />
   <link rel="manifest" href="site.webmanifest">
-
-  <script>
-    function toggle_light_mode() {
-        var app = document.getElementsByTagName("BODY")[0];
-        var button = document.getElementById("theme-toggle");
-        if (typeof localStorage.lightMode === 'undefined') {
-          localStorage.lightMode = "dark";
-        };
-        if (localStorage.lightMode == "dark") {
-          localStorage.lightMode = "light";
-          app.setAttribute("light-mode", "light");
-          button.classList.remove("theme-toggle--toggled");
-            } else {
-          localStorage.lightMode = "dark";
-          app.setAttribute("light-mode", "dark");
-          button.classList.add("theme-toggle--toggled");
-        }		
-    }
-    window.addEventListener("storage", function () {
-        if (localStorage.lightMode == "dark") {
-            app.setAttribute("light-mode", "dark");
-      } else {
-          app.setAttribute("light-mode", "light");
-      }
-    }, false);
-    </script>
 </head>
 <body>
-  <script>
-    var app = document.getElementsByTagName("BODY")[0];
-    if (localStorage.lightMode == "dark") {
-        app.setAttribute("light-mode", "dark");
-    }
-  </script>
   <div id="loader-wrapper">
     <div class="loader"></div>
   </div>
-  <button
-    id="theme-toggle"
-    class="theme-toggle theme-toggle--force-motion theme-toggle--toggled"
-    type="button"
-    title="Toggle theme"
-    aria-label="Toggle theme"
-    onclick="toggle_light_mode()"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      width="3em"
-      height="3em"
-      fill="currentColor"
-      class="theme-toggle__around"
-      viewBox="0 0 32 32"
-    >
-      <clipPath id="theme-toggle__around__cutout">
-        <path d="M0 0h42v30a1 1 0 00-16 13H0Z" />
-      </clipPath>
-      <g clip-path="url(#theme-toggle__around__cutout)">
-        <circle cx="16" cy="16" r="8.4" />
-        <g>
-          <circle cx="16" cy="3.3" r="2.3" />
-          <circle cx="27" cy="9.7" r="2.3" />
-          <circle cx="27" cy="22.3" r="2.3" />
-          <circle cx="16" cy="28.7" r="2.3" />
-          <circle cx="5" cy="22.3" r="2.3" />
-          <circle cx="5" cy="9.7" r="2.3" />
-        </g>
-      </g>
-    </svg>
-  </button>
   <section class="section1">
     <h1>JJ-Dev</h1>
   </section>
@@ -102,10 +37,6 @@
     $(window).on('load', function() {
       $("#loader-wrapper").fadeOut(700);
     });
-    if (localStorage.lightMode == "light") {
-        var button = document.getElementById("theme-toggle");
-        button.classList.remove("theme-toggle--toggled");
-    }
   </script>
 </body>
 </html>
